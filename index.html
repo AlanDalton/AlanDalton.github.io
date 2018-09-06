@@ -65,11 +65,17 @@ h1 {
 	color: hsla(120, 100%, 19%, 1);
 	background-color: transparent;
 	text-shadow: 0em 0.03125em 0.03125em hsla(0, 0%, 0%, 0.25);
-	transition: color 2s ease,	transform 2s ease, text-shadow 2s ease;
+	transition: color 2s ease, text-shadow 2s ease;
 }
 h1:hover { 
 	color: hsla(40, 100%, 22%, 1);
 	text-shadow: 0em 0.03125em 0.03125em hsla(0, 0%, 0%, 0.75);
+}
+#spanSpin { 
+	transition: transform 1s ease-out;
+	display: inline-block;
+}
+#spanSpin:hover { 
 	transform-origin: center;
 	transform: rotate(360deg);
 }
@@ -105,7 +111,7 @@ main {
 	<h1>Alan Dalton</h1>
 </header>
 <main>
-	<p>Let’s take <a href="https://pages.github.com/">Github Pages</a> for a&nbsp;spin.
+	<p>Let’s take <a href="https://pages.github.com/">Github Pages</a> for a&nbsp;<span id="spanSpin">spin</span>.
 </main>
 <footer>
 	<small>Copyright © Alan Dalton, 2018–<script>document.write(new Date().getFullYear().toString());</script><noscript>2018</noscript>. All rights&nbsp;reserved.</small>
