@@ -11,6 +11,19 @@
 *{
 	box-sizing: border-box;
 }
+/* custom variables for text colour and background colour for default (light) colour scheme */
+:root {
+  --my-text-colour: #263e0f;
+  --my-background-colour: #b1dd8b;
+}
+/* custom variables for text colour and background colour for dark colour scheme */
+@media (prefers-color-scheme: dark) {
+  :root {
+				--my-text-colour: #b1dd8b;
+				--my-background-colour: #263e0f;
+  }
+}
+
 html {
 	max-width: 100%;
 	margin: 0;
@@ -22,8 +35,8 @@ body {
 	line-height: 1.45;
 	padding: 1rem;
 	position: relative;
-	background-color: hsla(120, 100%, 95%, 1);
-	color: hsla(120, 100%, 19%, 1);
+	color: var(--my-text-colour);
+	background-color: var(--my-background-colour);
 }
 img {
 	max-width: 100%;
