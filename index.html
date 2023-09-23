@@ -22,6 +22,7 @@
 		--my-text-colour: #b1dd8b;
     --my-background-colour: #263e0f;
     --my-link-colour: #a7c6ff;
+    --my-display-typeface: 'Segoe Print', 'Bradley Hand', Chilanka, TSCu_Comic, casual, cursive; /* https://modernfontstacks.com/#handwritten */
   }
 }
 
@@ -55,11 +56,10 @@ h6 {
 	line-height: 125%;
 }
 h1 {
+  font-family: var(--my-display-typeface);
 	line-height: 100%;
 	margin-top: 0;
 	margin-bottom: 0;
-	color: hsla(120, 100%, 19%, 1);
-	background-color: transparent;
 	text-shadow: 0em 0.03125em 0.03125em hsla(0, 0%, 0%, 0.25);
 	transition: color 2s ease, text-shadow 2s ease;
 }
