@@ -107,7 +107,7 @@ table {
 }
 th, td {
   vertical-align: top;
-  padding: 0.0625em 0.125em;
+  padding: 0.125em 0.25em;
 }
 th[scope="row"] {
   text-align: left;
@@ -115,6 +115,21 @@ th[scope="row"] {
 }
 tbody tr:nth-child(odd) {
   background-color: color-mix(in srgb, var(--my-background-colour) 67%, #ebebeb);
+}
+
+dt::after {
+  content: ": ";
+}
+dt, dd {
+ display: inline;
+}
+dd:after {
+ content:"\a";
+ white-space: pre;
+}
+td dl {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 header {
@@ -167,12 +182,14 @@ main {
       </tr>
       <tr>
         <th scope="row"><a href="https://pagespeed.web.dev/analysis/https-alandalton-github-io/mymh627g79?form_factor=mobile">PageSpeed Insights (from Google for Developers) report for this webpage</a></th>
-        <td><ul>
-          <li>performance: 100%
-          <li>accessibility: 100%
-          <li>best practices: 100%
-          <li><span><dfn>SEO</dfn> (Search Engine Optimisation)</span>: 100%
-        </ul></td>
+        <td>
+          <dl>
+            <dt>performance</dl><dd>100%</dd>
+            <dt>accessibility</dl><dd>100%</dd>
+            <dt>best practices</dl><dd>100%</dd>
+            <dt><span><dfn>SEO</dfn> (Search Engine Optimisation)</span></dl><dd>100%</dd>
+          </dl>
+        </td>
       </tr>
     </tbody>
   </table>
