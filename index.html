@@ -107,13 +107,14 @@ table {
 }
 th, td {
   vertical-align: top;
+  padding: 0.0625em 0.125em;
 }
 th[scope="row"] {
   text-align: left;
   font-weight: 400;
 }
-tr:nth-child(odd) {
-  background-color: color-mix(in srgb, var(--my-background-colour), #ebebeb);
+tbody tr:nth-child(odd) {
+  background-color: color-mix(in srgb, var(--my-background-colour) 67%, #ebebeb);
 }
 
 header {
