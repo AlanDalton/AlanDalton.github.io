@@ -101,6 +101,21 @@ h6 {
 a {
   color: var(--my-link-colour);
 }
+
+table {
+  border-collapse: collapse;
+}
+th, td {
+  vertical-align: top;
+}
+th[scope="row"] {
+  text-align: left;
+  font-weight: 400;
+}
+th:nth-child(odd) {
+  background-color: color-mix(var(--my-background-colour), #ebebeb);
+}
+
 header {
 	margin-bottom: 4em;
 }
@@ -125,6 +140,7 @@ main {
 <footer>
 	<h2>quality check</h2>
   <table>
+    <caption>links to webpage-quality checkers, and their results for this webpage</caption> 
     <thead>
       <tr>
         <th scope="col">report</th>
