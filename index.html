@@ -113,7 +113,7 @@ th[scope="row"] {
   text-align: left;
   font-weight: 400;
 }
-@supports(background-color: color-mix) {
+@supports(background-color: color-mix(in srgb, var(--my-background-colour) 90%, #ebebeb)) {
   tbody tr:nth-child(odd) {
     background-color: color-mix(in srgb, var(--my-background-colour) 90%, #ebebeb);
   }
