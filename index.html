@@ -21,7 +21,7 @@
 /* custom variables for text colour and background colour for dark colour scheme */
 @media (prefers-color-scheme: dark) {
   :root {
-		--my-text-colour: #dfeed4;
+--my-text-colour: #dfeed4;
     --my-background-colour: #263e0f;
     --my-complementary-text-colour: #DD828A;
     --my-link-colour: #a7c6ff;
@@ -109,16 +109,11 @@ table {
 }
 th, td {
   vertical-align: top;
-  padding: 0.125em 0.25em;
+  padding: 0.125em 0.5em 0.25em 0.5em; /* https://alistapart.com/article/web-typography-tables/#snippet5 */
 }
 th[scope="row"] {
   text-align: left;
   font-weight: 400;
-}
-@supports(background-color: color-mix(in srgb, var(--my-background-colour) 90%, #ebebeb)) {
-  tbody tr:nth-child(odd) {
-    background-color: color-mix(in srgb, var(--my-background-colour) 90%, #ebebeb);
-  }
 }
 
 dt::after {
